@@ -1,4 +1,4 @@
-![Docker Image CI](https://github.com/HoussemDellai/ProductsStoreOnKubernetes/workflows/Docker%20Image%20CI/badge.svg)
+![Docker Image CI](https://github.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/workflows/Docker%20Image%20CI/badge.svg)
 
 # ProductsStore on Kubernetes
 
@@ -18,20 +18,20 @@ The k8s objects defined in YAML files are used to deploy the app into a Kubernet
 
     1.1) The vision: Microservices on Docker containers on Kubernetes hosted on the Cloud and powered by DevOps.
     
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/k8s-architect.png?raw=true" width="80%"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/k8s-architect.png?raw=true" width="80%"/>
 Source: https://blog.nebrass.fr/playing-with-spring-boot-on-kubernetes/  
 
 
     1.2) Learn more about Kubernetes architecture:
 
 <a href="https://www.youtube.com/watch?v=pR-UlYf61uA">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/k8s-explained.png?raw=true" width="80%"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/k8s-explained.png?raw=true" width="80%"/>
 </a>
 
     1.3) Learn more about Kubernetes objects: Deployment, Service, ConfigMap, Secret, PersistentVolume...
 
 <a href="https://www.youtube.com/watch?v=HJ6F05Pm5mQ">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/k8s-objects.png?raw=true" width="80%"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/k8s-objects.png?raw=true" width="80%"/>
 </a>
 	
 ### 2) Create docker container  
@@ -149,13 +149,13 @@ $ docker push $registry/mvc-app:1.0
 
 ### 9) Create the CI/CD pipelines for using Azure DevOps   
 
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/ci-cd-aks.png?raw=true"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/ci-cd-aks.png?raw=true"/>
 
 	9.1) CI pipeline: builds the container and pushes it to docker hub.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-ci.png?raw=true"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/kubernetes-ci.png?raw=true"/>
 
 	9.2) CD pipeline: deploys the YAML manifest files into Kubernetes cluster.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-cd.png?raw=true"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/kubernetes-cd.png?raw=true"/>
 	
 ### 10) Discussion points  
 scalability, health check, mounting volume, resource limits, service discovery, deploy with Helm...  
@@ -168,5 +168,5 @@ https://www.udemy.com/kubernetes-for-developers/
 Please email me if you want a free coupon :)  
 
 <a href="https://www.udemy.com/kubernetes-for-developers/">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/udemy-courses.png?raw=true" width="90%"/>
+<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/udemy-courses.png?raw=true" width="90%"/>
 </a>
