@@ -193,9 +193,3 @@ scalability, health check, mounting volume, resource limits, service discovery, 
 
 eShopOnContainers: <https://github.com/dotnet-architecture/eShopOnContainers>
 
-<https://www.udemy.com/kubernetes-for-developers/>
-Please email me if you want a free coupon :)  
-
-<a href="https://www.udemy.com/kubernetes-for-developers/">
-<img src="https://raw.githubusercontent.com/yashak/azure-pipelines-ProductsStoreOnKubernetes/main/images/udemy-courses.png?raw=true" width="90%"/>
-</a>
