@@ -39,6 +39,35 @@ stages:
         command: 'push'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
+    - task: replacetokens@5
+      inputs:
+        rootDirectory: 'kubernetes'
+        targetFiles: 'mvc-deployment.azure.yaml'
+        encoding: 'auto'
+        tokenPattern: 'default'
+        writeBOM: true
+        actionOnMissing: 'warn'
+        keepToken: false
+        actionOnNoFiles: 'continue'
+        enableTransforms: false
+        enableRecursion: false
+        useLegacyPattern: false
+        enableTelemetry: true
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: 'kubernetes'
+        Contents: |
+          mssql-secret.yaml
+          mssql-pv.azure.yaml
+          mssql-deployment.yaml
+          mssql-configmap.yaml
+          mvc-deployment.azure.yaml
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: 'k8s-manifests'
+        publishLocation: 'pipeline'
 
 # - stage: Deploy
 #   displayName: Deploy Helm
