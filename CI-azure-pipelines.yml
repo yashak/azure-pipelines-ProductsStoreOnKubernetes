@@ -28,7 +28,7 @@ stages:
         containerRegistry: 'docker-registry'
         repository: 'jkolonkova/azure-pipelines-ProductsStoreOnKubernetes'
         command: 'build'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: 'MvcApp/Dockerfile'
         tags: '$(tag)'
 
     - task: Docker@2
