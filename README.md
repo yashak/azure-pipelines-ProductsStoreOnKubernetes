@@ -20,7 +20,7 @@ The k8s objects defined in YAML files are used to deploy the app into a Kubernet
 Docker build webapp image:
 
 ```bash
-docker build --pull --rm -f "WebApp\Dockerfile" -t jkolonkova/productsstoreonkubernetes:1.0 "WebApp" 
+docker build --pull --rm -f "WebApp\Dockerfile" -t jkolonkova/azure-pipelines-productsstoreonkubernetes:87 "WebApp" 
 ```
 
 K8s manifest for local deployment:

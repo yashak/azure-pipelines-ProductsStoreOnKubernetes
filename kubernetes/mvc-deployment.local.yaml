@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mvc
-          image: jkolonkova/productsstoreonkubernetes:1.0
+          image: jkolonkova/azure-pipelines-productsstoreonkubernetes:87
           ports:
             - containerPort: 80
           resources:
