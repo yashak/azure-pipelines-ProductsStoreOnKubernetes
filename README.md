@@ -36,6 +36,10 @@ K8s manifest for local deployment:
 kubectl port-forward svc/mvc-service 8022:8012 
 ```
 
+## Setup AKS with Terraform
+
+See: [my-azure-aks-terraform-devops-masterclass](https://github.com/yashak/my-azure-aks-terraform-devops-masterclass/tree/main/01-Azure-AKS-Terraform)
+
 ### 1) Introduction: Kubernetes and microservices
 
     1.1) The vision: Microservices on Docker containers on Kubernetes hosted on the Cloud and powered by DevOps.
