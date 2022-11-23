@@ -30,12 +30,12 @@ spec:
           env:
             - name: ConnectionStrings__ProductsContext
               valueFrom:
-                configMapKeyRef:
-                  name: mssql-connection-configmap
-                  key: db-connection-string
-              secretKeyRef:
-                name: mssql-secret
-                key: db-connection-string-secret
+                # configMapKeyRef:
+                #   name: mssql-connection-configmap
+                #   key: db-connection-string
+                secretKeyRef:
+                  name: mssql-secret
+                  key: db-connection-string-secret
 ---
 kind: Service
 apiVersion: v1
