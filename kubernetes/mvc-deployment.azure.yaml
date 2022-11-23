@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: mvc
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
@@ -33,9 +33,9 @@ spec:
                 configMapKeyRef:
                   name: mssql-connection-configmap
                   key: db-connection-string
-          #     secretKeyRef:
-          #       name: mssql-secret
-          #       key: db-connection-string-secret
+              secretKeyRef:
+                name: mssql-secret
+                key: db-connection-string-secret
 ---
 kind: Service
 apiVersion: v1
